@@ -38,13 +38,13 @@ export default function About() {
               <span className="text-sm font-bold uppercase tracking-widest text-brand-dark">About Us</span>
             </div>
             <h2 className="text-4xl md:text-5xl text-brand-dark leading-tight">
-              At Finovo, we help businesses navigate complex finances with confidence.
+              Dedicated to Supporting Your Business Growth
             </h2>
             <p className="text-lg text-gray-600 font-body leading-relaxed">
-              With years of experience and a truly client-focused approach, we empower businesses to unlock new opportunities and achieve financial stability.
+              NBK PREMIER SOLUTIONS is a business management and investment consulting firm based in Kampala, Uganda, working with businesses and investors to set up and manage successful plans, projects, and profit strategies.
             </p>
             <button className="bg-brand-primary text-white px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:bg-brand-dark transition-all group">
-              About company
+              About NBK Premier
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
@@ -75,36 +75,18 @@ export default function About() {
 
         {/* Global Trust Section */}
         <div className="mt-32 grid lg:grid-cols-2 gap-20 items-center">
-           <motion.div
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             className="relative"
           >
             <img
-              src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2070&auto=format&fit=crop"
-              alt="Global Map"
-              className="w-full h-auto opacity-20"
+              src="/assets/expertise.png"
+              alt="Business Meeting in Kampala"
+              className="w-full h-auto rounded-2xl shadow-xl"
               referrerPolicy="no-referrer"
             />
-            {/* Floating Avatars */}
-            {[
-              { top: '20%', left: '15%' },
-              { top: '60%', left: '40%' },
-              { top: '30%', right: '20%' },
-              { bottom: '20%', right: '10%' }
-            ].map((pos, i) => (
-              <motion.img
-                key={i}
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, delay: i * 0.5 }}
-                src={`https://picsum.photos/seed/${i + 50}/100/100`}
-                className="absolute w-12 h-12 rounded-full border-2 border-white shadow-lg"
-                style={pos}
-                alt="Client"
-                referrerPolicy="no-referrer"
-              />
-            ))}
           </motion.div>
 
           <motion.div
@@ -115,22 +97,22 @@ export default function About() {
           >
             <div className="flex items-center gap-4">
               <div className="w-10 h-[1px] bg-brand-dark" />
-              <span className="text-sm font-bold uppercase tracking-widest text-brand-dark">Global Trust</span>
+              <span className="text-sm font-bold uppercase tracking-widest text-brand-dark">Our Expertise</span>
             </div>
             <h2 className="text-4xl md:text-5xl text-brand-dark leading-tight">
-              Our valued clients around the world
+              Trusted by Top Businesses in East Africa
             </h2>
             <p className="text-lg text-gray-600 font-body leading-relaxed">
-              Discover the global reach of our financial expertise. We proudly serve businesses across multiple regions, helping them achieve financial success with tailored solutions.
+              Led by Dr. Nicholas Katushabe, our team has over a decade of experience in business development, research projects, and regulatory compliance, ensuring that serious businesses build serious structure.
             </p>
             <div className="grid grid-cols-2 gap-8 pt-4">
               <div>
-                <div className="text-4xl font-display font-bold text-brand-dark">98%</div>
-                <div className="text-sm text-gray-500 font-body mt-1">Satisfied Clients</div>
+                <div className="text-4xl font-display font-bold text-brand-dark">10+</div>
+                <div className="text-sm text-gray-500 font-body mt-1">Years Experience</div>
               </div>
               <div>
-                <div className="text-4xl font-display font-bold text-brand-dark">25+</div>
-                <div className="text-sm text-gray-500 font-body mt-1">Countries Served</div>
+                <div className="text-4xl font-display font-bold text-brand-dark">150%</div>
+                <div className="text-sm text-gray-500 font-body mt-1">Typical Revenue Growth</div>
               </div>
             </div>
           </motion.div>
